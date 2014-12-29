@@ -5,6 +5,7 @@
 <?php comments_template(); ?>
 <?php endwhile; endif; ?>
 <?php get_template_part( 'nav', 'below' ); ?>
+&nbsp;
 </section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

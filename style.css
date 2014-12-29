@@ -51,53 +51,60 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #menu {
 	max-width: 1200px;
 	margin: 0 auto;
+	z-index: 10;
 }
 
-#menu .page_item a:hover {
+#menu .menu-item a:hover {
 	color: #999;
 }
 
-#menu > .menu .page_item a {
+#menu .menu .menu-item a {
 	display: block;
 	padding: 8px;
+
 }
 
 /* TOP LEVEL */
-#menu > .menu > ul > .page_item {
+#menu .menu > .menu-item {
 	display: inline-block;
 	border-right: 1px solid #dcdcdc;
 	border-bottom: 1px solid #dcdcdc;
+	margin-left: -5px; /* inline-block spacing fix */
 }
 
-#menu > .menu > ul > .page_item a {
+
+#menu .menu > .menu-item a {
 	padding-bottom: 7px;
 }
 
-#menu > .menu > ul > .page_item:after {
+#menu .menu > .menu-item:after {
 	content: '';
 	display: block;
 	border-bottom: 3px solid transparent;
 }
 
-#menu > .menu > ul > .current_page_item:after {
-	border-bottom: 3px solid #d97908;
-}
-
-#menu > .menu > ul > .page_item:hover:after {
-	border-bottom: 3px solid #f7931d;
-}
-
-#menu > .menu > ul > .page_item:first-child {
+#menu .menu > .menu-item:first-child {
 	border-left: 1px solid #dcdcdc;
 }
 
-#menu > .menu > ul > .page_item:hover > .children {
+#menu .menu > .current-menu-item:after {
+	border-bottom: 3px solid #d97908;
+}
+
+#menu .menu > .menu-item:hover:after {
+	border-bottom: 3px solid #f7931d;
+}
+
+#menu .menu > .menu-item:hover > .sub-menu {
 	display: block;
 }
 
 
+
+
+
 /* SUB LEVEL */
-#menu > .menu > ul > .page_item > .children {
+#menu .menu > .menu-item > .sub-menu {
 	display: none;
 	position: absolute;
 	margin: 0 0 0 -1px;
@@ -106,15 +113,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	border-top: 0;
 }
 
-#menu .children .page_item a {
-	border-left: 3px solid transparent;
-}
-
-#menu .children .page_item a:hover {
-	border-left: 3px solid #f7931d;
-}
-
-#menu .page_item .children .children a {
+.sub-menu .sub-menu {
 	padding-left: 20px;
 }
 
@@ -123,7 +122,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *	SIDEBAR
 **************************/
 #sidebar {
-	width: 20%;
+	width: 200px;
 	float: left;
 }
 
@@ -160,15 +159,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *	CONTENT
 **************************/
 #content {
-	width: 75%;
+	width: 70%;
 	float: left;
 	padding-right: 20px;
-}
-
-@media screen and (max-width: 1220px){
-    #content {
-    	padding-left: 20px;
-    }
+	box-sizing: border-box;
 }
 
 #content ol, 
@@ -375,4 +369,88 @@ pre {
 
 .entry-links {
 	margin-top: 25px;
+}
+
+
+
+
+@media screen and (max-width: 1220px) {
+    #content {
+    	padding-left: 20px;
+    }
+
+    #footer {
+    	padding-left: 20px;	
+    	padding-right: 20px;	
+    }
+}
+
+@media screen and (max-width: 782px) {
+    #content {
+    	width: 100%;
+    	padding-left: 20px;	
+    	padding-right: 20px;	
+    }
+
+    #menu .menu > .menu-item {
+    	display: block;
+    	border: 0; 
+    	border-top: 1px solid #dcdcdc;
+
+    }
+    #menu .menu > .menu-item > .sub-menu {
+    	display: block;
+    	position: relative;
+    	border: 0; 
+ 
+    }
+
+    #menu .menu > .menu-item > .sub-menu .menu-item {
+    	border: 0; 
+    	border-top: 1px solid #dcdcdc;
+    }
+
+    #menu .sub-menu {
+    	padding-left: 20px;
+    }
+
+
+    #menu .menu > .menu-item:first-child {
+		border-left: 0;
+	}
+
+	#menu .menu > .menu-item:after,
+	#menu .menu > .menu-item:hover:after,
+	#menu .menu > .current-menu-item:after {
+		border-bottom: 0;
+	}
+
+	#menu .menu > .menu-item:hover > .sub-menu {
+		display: block;
+	}
+
+
+
+    #menu > div {
+		display: none;
+	}
+
+	#menu:before {
+		content: 'Menu';
+		display: block;
+		padding: 10px;
+		font-weight: bold;
+	}
+
+	#menu:hover > div,
+	#menu:focus > div {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#content {
+    	padding-left: 5px;	
+    	padding-right: 5px;	
+    }
 }
