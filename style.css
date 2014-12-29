@@ -14,6 +14,8 @@ nexnet WordPress Theme © 2011-2014 Håvard Kindem
 nexnet is distributed under the terms of the GNU GPL
 */
 
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,700italic,400italic);
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
 
@@ -98,10 +100,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #menu .menu > .menu-item:hover > .sub-menu {
 	display: block;
 }
-
-
-
-
 
 /* SUB LEVEL */
 #menu .menu > .menu-item > .sub-menu {
@@ -192,11 +190,39 @@ thead th {
 
 
 /**************************
+*	COMMENTS
+**************************/
+#comments {
+	margin-top: 50px;
+}
+
+.comment {
+	list-style: none;
+	margin-bottom: 25px;
+}
+
+.comment-author {
+	font-size: 1.4em;
+}
+
+.comment-meta {
+	font-size: 0.8em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.comment .children {
+	margin-top: 25px;
+}
+
+
+/**************************
 *	GLOBAL
 **************************/
 
 body {
-	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+	/*font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;*/
+	font-family: 'Exo 2', sans-serif;
 	color: #4c4c4e;
 }
 
@@ -229,7 +255,7 @@ a:hover {
 #container h5,
 #container h6 {
 	font-weight: bold;
-	padding: 20px 0 5px 0;
+	padding: 15px 0 5px 0;
 }
 
 #container h1 {
@@ -253,6 +279,10 @@ a:hover {
 
 p {
 	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
 }
 
 cite {
@@ -285,6 +315,11 @@ var {
 	font-style: italic;
 }
 
+ins {
+	background-color: #fcd7ac;
+	text-decoration: none;
+}
+
 address {
 	display: block;
 	padding-left: 25px;
@@ -310,47 +345,79 @@ blockquote cite  {
 	margin-left: 10px;
 	margin-top: 5px;
 }
-blockquote cite:before {
-	content: '- ';
-}
 
 code, 
 pre,
 kbd,
 tt {
+	display: block;
 	font-family: monospace;
 	word-wrap: break-word;
 }
+
 
 
 img,
 .wp-caption {
 	max-width: 100%;
 	height: auto;
+	vertical-align: middle;
+	border: 0;
 }
 
-.wp-caption > p {
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption-text {
 	font-size: 0.8em;
 	padding: 5px;
 }
+
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+blockquote.alignleft, 
+.wp-caption.alignleft, 
+img.alignleft {
+	margin: 5px 10px 10px 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+blockquote.alignright, 
+.wp-caption.alignright, 
+img.alignright {
+	margin: 5px 0 10px 5px;
+}
+
 
 pre {
 	word-wrap: break-word;
 }
 
 /* ARTICLES */
-.post,
-.page {
+article.page,
+article.post {
 	margin-bottom: 50px;
+	word-wrap: break-word;
+	-ms-word-wrap: break-word;
 }
-.post > header,
-.page > header {
-	margin-bottom: 25px;
+article.post > header,
+article.page > header {
+	margin-bottom: 15px;
 }
-.post > footer {
-	margin-top: 25px;
+article.post > footer {
+	margin-top: 15px;
 	font-size: 0.8em;
 }
+
+
 .entry-title {
 	font-size: 1.6em;
 }
@@ -373,6 +440,38 @@ pre {
 	margin-top: 25px;
 }
 
+.entry-content .attachment-post-thumbnail {
+	display: block;
+	margin: 0 auto 25px auto;	
+}
+
+#nav-above {
+	padding: 10px;
+	text-align: center;
+	font-size: 1.6em;
+}
+#nav-above .nav-previous,
+#nav-above .nav-next {
+	display: inline-block;
+	padding: 5px;
+}
+
+input {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.1em;
+
+}
+
+input[type="text"],
+input[type="password"] {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	outline: none;
+}
+textarea {
+	width: 100%;
+}
 
 
 
