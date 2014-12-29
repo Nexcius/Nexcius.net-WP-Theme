@@ -30,7 +30,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	box-shadow: 0 6px 5px -4px #bfbfbf;
 }
 #header a {
-	color: #000;
+	color: #313233;
 }
 #branding {
 	margin: 0 auto;
@@ -40,8 +40,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	border-bottom: 1px solid #dcdcdc;
 }
 #site-title {
-	font-size: 1.6em;
+	font-size: 2em;
 }
+
 
 
 /**************************
@@ -52,9 +53,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	margin: 0 auto;
 }
 
+#menu .page_item a:hover {
+	color: #999;
+}
+
 #menu > .menu .page_item a {
 	display: block;
-	padding: 10px;
+	padding: 8px;
 }
 
 /* TOP LEVEL */
@@ -221,32 +226,32 @@ a:hover {
 	color: #d97908;
 }
 
-h1, 
-h2,
-h3,
-h4,
-h5,
-h6 {
+#container h1, 
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
 	font-weight: bold;
 	padding: 20px 0 5px 0;
 }
 
-h1 {
+#container h1 {
 	font-size: 1.8em;
 }
-h2 {
+#container h2 {
 	font-size: 1.6em;
 }
-h3 {
+#container h3 {
 	font-size: 1.4em;
 }
-h4 {
+#container h4 {
 	font-size: 1.2em;
 }
-h5 {
+#container h5 {
 	font-size: 1.0em;
 }
-h6 {
+#container h6 {
 	font-size: 0.8em;
 }
 
@@ -279,7 +284,8 @@ sub {
 strong {
 	font-weight: bold;
 }
-em {
+em,
+var {
 	font-style: italic;
 }
 
@@ -312,6 +318,13 @@ blockquote cite:before {
 	content: '- ';
 }
 
+code, 
+pre,
+kbd,
+tt {
+	font-family: monospace;
+	word-wrap: break-word;
+}
 
 
 img,
@@ -336,10 +349,10 @@ pre {
 }
 .post > header,
 .page > header {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .post > footer {
-	margin-top: 20px;
+	margin-top: 25px;
 	font-size: 0.8em;
 }
 .entry-title {
@@ -356,6 +369,10 @@ pre {
 }
 
 .post-edit-link {
-	float: right;
-	margin-right: 30px;
+	float:right;
+	margin-right: 25px;
+}
+
+.entry-links {
+	margin-top: 25px;
 }
