@@ -122,7 +122,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *	SIDEBAR
 **************************/
 #sidebar {
-	width: 200px;
+	width:250px;
+	margin-left: -250px;
 	float: left;
 }
 
@@ -159,11 +160,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *	CONTENT
 **************************/
 #content {
-	width: 70%;
 	float: left;
-	padding-right: 20px;
+	width: 100%;
+	padding-right: 270px;
 	box-sizing: border-box;
 }
+
 
 #content ol, 
 #content ul, 
@@ -387,49 +389,32 @@ pre {
 
 @media screen and (max-width: 782px) {
     #content {
-    	width: 100%;
     	padding-left: 20px;	
     	padding-right: 20px;	
     }
 
-    #menu .menu > .menu-item {
-    	display: block;
-    	border: 0; 
-    	border-top: 1px solid #dcdcdc;
+    #sidebar {
+		margin-left: 0;
+	}
 
-    }
-    #menu .menu > .menu-item > .sub-menu {
+    #menu .menu .menu-item {
     	display: block;
-    	position: relative;
-    	border: 0; 
- 
-    }
-
-    #menu .menu > .menu-item > .sub-menu .menu-item {
-    	border: 0; 
-    	border-top: 1px solid #dcdcdc;
+    	border: 0 !important; 
+    	border-top: 1px solid #dcdcdc !important;
     }
 
     #menu .sub-menu {
     	padding-left: 20px;
+    	display: block !important;
+    	position: relative !important;
+    	border: 0 !important;
     }
-
-
-    #menu .menu > .menu-item:first-child {
-		border-left: 0;
-	}
 
 	#menu .menu > .menu-item:after,
 	#menu .menu > .menu-item:hover:after,
 	#menu .menu > .current-menu-item:after {
 		border-bottom: 0;
 	}
-
-	#menu .menu > .menu-item:hover > .sub-menu {
-		display: block;
-	}
-
-
 
     #menu > div {
 		display: none;
