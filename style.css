@@ -1,0 +1,249 @@
+/*
+Theme Name: BlankSlate
+Theme URI: http://wordpress.org/themes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2014 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+
+/**************************
+*	HEADER
+**************************/
+#header {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #efefef;
+	border-bottom: 1px solid #dcdcdc;
+	box-shadow: 0 6px 5px -4px #bfbfbf;
+}
+#header a {
+	color: #000;
+}
+#branding {
+	margin: 0 auto;
+	padding: 20px 0 20px 0;
+
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+}
+#site-title {
+	font-size: 2.5em;
+}
+
+
+/**************************
+*	NAV MENU 
+**************************/
+#menu {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#menu > .menu .page_item a {
+	display: block;
+	padding: 10px;
+}
+
+/* TOP LEVEL */
+#menu > .menu > ul > .page_item {
+	display: inline-block;
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#menu > .menu > ul > .page_item a {
+	padding-bottom: 7px;
+}
+
+#menu > .menu > ul > .page_item:after {
+	content: '';
+	display: block;
+	border-bottom: 3px solid transparent;
+}
+
+#menu > .menu > ul > .current_page_item:after {
+	border-bottom: 3px solid #d97908;
+}
+
+#menu > .menu > ul > .page_item:hover:after {
+	border-bottom: 3px solid #f7931d;
+}
+
+#menu > .menu > ul > .page_item:first-child {
+	border-left: 1px solid #dcdcdc;
+}
+
+#menu > .menu > ul > .page_item:hover > .children {
+	display: block;
+}
+
+
+/* SUB LEVEL */
+#menu > .menu > ul > .page_item > .children {
+	display: none;
+	position: absolute;
+	margin: 0 0 0 -1px;
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-top: 0;
+}
+
+#menu .children .page_item a {
+	border-left: 3px solid transparent;
+}
+
+#menu .children .page_item a:hover {
+	border-left: 3px solid #f7931d;
+}
+
+#menu .page_item .children .children a {
+	padding-left: 20px;
+}
+
+
+/**************************
+*	SIDEBAR
+**************************/
+#sidebar {
+	width: 20%;
+	float: left;
+}
+
+.widget-container {
+	margin-bottom: 30px;
+}
+
+.widget-title {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e2e3e4;
+}
+
+
+/**************************
+*	FOOTER
+**************************/
+#footer {
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 30px 0 30px 0;
+	background-color: #313233;
+	color: #939597;
+}
+
+#footer > div {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/**************************
+*	CONTENT
+**************************/
+#content {
+	width: 75%;
+	float: left;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 1220px){
+    #content {
+    	padding-left: 20px;
+    }
+}
+
+
+/**************************
+*	GLOBAL
+**************************/
+
+body {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+	color: #4c4c4e;
+}
+
+#container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+::selection {
+background: #f7931d;
+color: #fff;
+text-shadow: none;
+}
+
+/* TEXT */
+a {
+	color: #f7931d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d97908;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+}
+
+img,
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+}
+
+pre {
+	word-wrap: break-word;
+}
+
+/* ARTICLES */
+.post,
+.page {
+	margin-bottom: 50px;
+}
+.post > header,
+.page > header {
+	margin-bottom: 20px;
+}
+.post > footer {
+	margin-top: 20px;
+	font-size: 0.8em;
+}
+.entry-title {
+	font-size: 1.6em;
+}
+.entry-title a {
+	color: #313233;
+}
+.entry-title a:hover {
+	color: #636567;
+}
+.entry-meta {
+	font-size: 0.8em;
+}
+
+.post-edit-link {
+	float: right;
+	margin-right: 30px;
+}
