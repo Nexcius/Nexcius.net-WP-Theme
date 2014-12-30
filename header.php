@@ -9,6 +9,11 @@
 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<style>
+	#searchform input[type="text"] {
+		width: 180px;
+	}
+</style>
 <![endif]-->
 
 </head>

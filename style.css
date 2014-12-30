@@ -3,7 +3,7 @@ Theme Name: Nexcius.net WP Theme
 Theme URI: http://wordpress.org/themes/nexnet
 Author: Håvard Kindem
 Author URI: http://nexcius.net
-Description: A fully responsive, simplistic and clean theme.
+Description: A fully responsive, simplistic and clean theme. 
 Version: 1.0
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
@@ -37,7 +37,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #branding {
 	margin: 0 auto;
 	padding: 20px 0 20px 0;
-
 	text-align: center;
 	border-bottom: 1px solid #dcdcdc;
 }
@@ -201,6 +200,10 @@ thead th {
 	margin-bottom: 25px;
 }
 
+.comments-title {
+	margin-bottom: 25px;
+}
+
 .comment-author {
 	font-size: 1.4em;
 }
@@ -215,17 +218,15 @@ thead th {
 	margin-top: 25px;
 }
 
+.comment cite {
+	font-variant: normal;
+	font-style: normal;
+}
+
 
 /**************************
 *	GLOBAL
 **************************/
-
-body {
-	/*font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;*/
-	font-family: 'Exo 2', sans-serif;
-	color: #4c4c4e;
-}
-
 #container {
 	width: 100%;
 	max-width: 1200px;
@@ -239,14 +240,6 @@ text-shadow: none;
 }
 
 /* TEXT */
-a {
-	color: #f7931d;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #d97908;
-}
 
 #container h1, 
 #container h2,
@@ -275,6 +268,21 @@ a:hover {
 }
 #container h6 {
 	font-size: 0.8em;
+}
+
+/* GLOBAL TAGS */
+body {
+	font-family: 'Exo 2', sans-serif;
+	color: #4c4c4e;
+}
+
+a {
+	color: #f7931d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d97908;
 }
 
 p {
@@ -350,12 +358,15 @@ code,
 pre,
 kbd,
 tt {
-	display: block;
 	font-family: monospace;
 	word-wrap: break-word;
 }
 
-
+pre {
+	display: block;
+	margin-bottom: 10px;
+	word-wrap: break-word;
+}
 
 img,
 .wp-caption {
@@ -396,10 +407,20 @@ img.alignright {
 	margin: 5px 0 10px 5px;
 }
 
-
-pre {
-	word-wrap: break-word;
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
+blockquote.aligncenter, 
+.wp-caption.aligncenter, 
+img.aligncenter {
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
 
 /* ARTICLES */
 article.page,
@@ -473,8 +494,84 @@ textarea {
 	width: 100%;
 }
 
+input[type="button"],
+input[type="submit"],
+input[type="color"] {
+	background-color: #f7931d;
+	border: 1px solid #4c4c4e;
+	cursor: pointer;
+	padding: 3px 15px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="color"]:hover {
+	background-color: #d97908;	
+}
 
 
+#searchform {
+	width: 100%;
+}
+#searchform label {
+	display:block;
+}
+#searchform input[type="text"] {
+	width: 100%;
+	box-sizing: border-box;
+	float: left;
+	padding-right: 70px;
+}
+#searchform input[type="submit"] {
+	width: 70px;
+	box-sizing: border-box;
+	float: right;
+	margin-left: -100%;
+	padding: 1px 3px;
+}
+
+
+/* CLEARFIX */
+.clear:before, 
+.clear:after, 
+.site:before, 
+.site:after, 
+.entry-content:before, 
+.entry-content:after, 
+.comment-content:before, 
+.comment-content:after, 
+.site-content:before, 
+.site-content:after, 
+.nav-links:before, 
+.nav-links:after, 
+.comment-navigation:before, 
+.comment-navigation:after, 
+.social-navigation ul:before, 
+.social-navigation ul:after, 
+.textwidget:before, 
+.textwidget:after {
+	content: "";
+	display: table;
+}
+
+.clear:after, 
+.site:after, 
+.entry-content:after, 
+.comment-content:after, 
+.site-content:after, 
+.nav-links:after, 
+.comment-navigation:after, 
+.social-navigation ul:after, 
+.textwidget:after {
+	clear: both;
+}
+
+
+
+
+/**************************
+* RESPONSIVE LAYOUT
+**************************/
 @media screen and (max-width: 1220px) {
     #content {
     	padding-left: 20px;
@@ -489,11 +586,16 @@ textarea {
 @media screen and (max-width: 782px) {
     #content {
     	padding-left: 20px;	
-    	padding-right: 20px;	
+    	padding-right: 20px;
     }
 
     #sidebar {
+    	width: 100%;
+		box-sizing: border-box;
 		margin-left: 0;
+		margin-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
     #menu .menu .menu-item {
@@ -533,7 +635,8 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-	#content {
+	#content,
+	#sidebar {
     	padding-left: 5px;	
     	padding-right: 5px;	
     }
