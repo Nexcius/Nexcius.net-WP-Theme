@@ -233,6 +233,29 @@ thead th {
 	font-style: normal;
 }
 
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	display: table-row;
+}
+
+.comment-form-author > label,
+.comment-form-email > label,
+.comment-form-url > label {
+	display: table-cell;
+	padding-right: 25px;
+}
+
+.comment-form-author > input,
+.comment-form-email > input,
+.comment-form-url > input {
+	display: table-cell;
+}
+
+.comment-form-comment {
+	margin-top: 10px;
+}
+
 
 /**************************
 *	GLOBAL
@@ -608,6 +631,15 @@ input[type="color"]:hover {
 		padding-right: 20px;
 	}
 
+	#menu {
+		width: 30%;
+		margin: 0;
+	}
+	#menu:hover,
+	#menu:focus {
+		width: 100%;
+	}
+
     #menu .menu .menu-item {
     	display: block;
     	border: 0 !important; 
@@ -634,14 +666,20 @@ input[type="color"]:hover {
 	#menu:before {
 		content: 'Menu';
 		display: block;
-		padding: 10px;
-		font-weight: bold;
+		height: 2em;
+		margin: 5px 0 5px 10px;
+		padding-left: 2em;
+		background: url('menu.png');
+		background-repeat: no-repeat;
+		background-size: auto 30px;
+		line-height: 1.6em;
+		font-size: 1.2em;
 	}
 
 	#menu:hover > div,
 	#menu:focus > div {
 		display: block;
-		margin-top: 20px;
+		border-top: 20px solid #f7931d;
 	}
 }
 
