@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,700italic,400italic);
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+
+ol, 
+ul, 
+dd {
+	margin-left: 25px;
+} 
+ol {
+	list-style: decimal;
+}
+ul {
+	list-style: disc;	
+}
+dd {
+	margin-bottom: 5px;
+}
+
+th {
+	font-weight: bold;
+}
+thead th {
+	
+	padding-bottom: 5px;
+}
+
+.embed-youtube {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.more-link {
+	padding-top: 10px;
+	display: block;
+}
+
+
+::selection {
+background: #f7931d;
+color: #fff;
+text-shadow: none;
+}
+
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	padding: 15px 0 5px 0;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5 {
+	font-size: 1.0em;
+}
+h6 {
+	font-size: 0.8em;
+}
+
+/* GLOBAL TAGS */
+body {
+	font-family: 'Exo 2', sans-serif;
+	background-color: #fafafa;
+	color: #4c4c4e;
+}
+
+a {
+	color: #f7931d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d97908;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+cite {
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+q,
+q:before,
+q:after {
+	font-style: italic;
+	content: '"';
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+strong {
+	font-weight: bold;
+}
+em,
+var {
+	font-style: italic;
+}
+
+ins {
+	background-color: #fcd7ac;
+	text-decoration: none;
+}
+
+address {
+	display: block;
+	padding-left: 25px;
+	font-style: italic;
+}
+address:after {
+	content: '';
+	display: block;
+	height: 10px;
+}
+
+blockquote {
+	border-left: 5px solid #f7931d;
+	margin: 0 0 10px 25px;
+	padding: 5px 0 5px 10px;
+	font-style: italic;
+}
+blockquote > p {
+	margin: 0;
+}
+blockquote cite  {
+	display: block;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+code, 
+pre,
+kbd,
+tt {
+	font-family: monospace;
+	word-wrap: break-word;
+}
+
+pre {
+	display: block;
+	margin-bottom: 10px;
+	word-wrap: break-word;
+}
+
+img,
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption-text {
+	font-size: 0.8em;
+	padding: 5px;
+}
+
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+blockquote.alignleft, 
+.wp-caption.alignleft, 
+img.alignleft {
+	margin: 5px 10px 10px 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+blockquote.alignright, 
+.wp-caption.alignright, 
+img.alignright {
+	margin: 5px 0 10px 5px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+blockquote.aligncenter, 
+.wp-caption.aligncenter, 
+img.aligncenter {
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+/* ARTICLES */
+input {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.1em;
+
+}
+
+input[type="text"],
+input[type="password"] {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	outline: none;
+}
+textarea {
+	width: 100%;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="color"] {
+	background-color: #f7931d;
+	border: 1px solid #4c4c4e;
+	cursor: pointer;
+	padding: 3px 15px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="color"]:hover {
+	background-color: #d97908;	
+}
+
