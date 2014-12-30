@@ -13,7 +13,7 @@ add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 930, 300, true);
 
 global $content_width;
-if ( ! isset( $content_width ) ) $content_width = 640;
+if ( ! isset( $content_width ) ) $content_width = 930;
 register_nav_menus(
 array( 'main-menu' => __( 'Main Menu', 'nexnet' ) )
 );
