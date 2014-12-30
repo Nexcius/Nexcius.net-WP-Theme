@@ -70,7 +70,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	display: inline-block;
 	border-right: 1px solid #dcdcdc;
 	border-bottom: 1px solid #dcdcdc;
-	margin-left: -5px; /* inline-block spacing fix */
+	margin-left: -4px; /* inline-block spacing fix */
 }
 
 
@@ -187,6 +187,16 @@ thead th {
 	padding-bottom: 5px;
 }
 
+.embed-youtube {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.more-link {
+	padding-top: 10px;
+	display: block;
+}
+
 
 /**************************
 *	COMMENTS
@@ -273,6 +283,7 @@ text-shadow: none;
 /* GLOBAL TAGS */
 body {
 	font-family: 'Exo 2', sans-serif;
+	background-color: #fafafa;
 	color: #4c4c4e;
 }
 
