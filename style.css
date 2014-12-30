@@ -642,6 +642,7 @@ input[type="color"]:hover {
 	#menu:hover > div,
 	#menu:focus > div {
 		display: block;
+		margin-top: 20px;
 	}
 }
 
