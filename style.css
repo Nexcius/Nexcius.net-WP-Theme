@@ -329,6 +329,16 @@ table {
 	width: 100%;
 }
 
+th {
+	border-bottom: 1px solid #dcdcdc;
+}
+
+td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #efefef;
+}
+
 cite {
 	font-variant: small-caps;
 	font-style: italic;
