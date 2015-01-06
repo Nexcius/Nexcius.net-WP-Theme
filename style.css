@@ -339,6 +339,11 @@ td {
 	border-bottom: 1px solid #efefef;
 }
 
+hr {
+	border: 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+
 cite {
 	font-variant: small-caps;
 	font-style: italic;
@@ -474,6 +479,7 @@ article.post {
 	margin-bottom: 50px;
 	word-wrap: break-word;
 	-ms-word-wrap: break-word;
+	line-height: 1.3em;
 }
 article.post > header,
 article.page > header {
