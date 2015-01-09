@@ -107,7 +107,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .widget-container {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .widget-title {
@@ -297,7 +297,7 @@ a:hover {
 
 p {
 	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 table {
@@ -416,6 +416,7 @@ img,
 .wp-caption-text {
 	font-size: 0.8em;
 	padding: 5px;
+	margin: 0;
 }
 
 
@@ -460,12 +461,8 @@ article.post {
 	margin-bottom: 50px;
 	word-wrap: break-word;
 	-ms-word-wrap: break-word;
-	/*line-height: 1.3em;*/
 }
-article.post > header,
-article.page > header {
-	margin-bottom: 15px;
-}
+
 article.post > footer {
 	font-size: 0.8em;
 }
@@ -555,8 +552,8 @@ input[type="color"]:hover {
 
 #searchform {
 	width: 100%;
-	padding-bottom: 25px;
 }
+
 #searchform label {
 	display:block;
 }
@@ -600,7 +597,9 @@ input[type="color"]:hover {
 .social-navigation ul:before, 
 .social-navigation ul:after, 
 .textwidget:before, 
-.textwidget:after {
+.textwidget:after,
+.widget-container:before,
+.widget-container:after {
 	content: "";
 	display: table;
 }
