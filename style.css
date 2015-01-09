@@ -149,6 +149,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #content ul, 
 #content dd {
 	margin-left: 25px;
+	padding-bottom: 5px;
 } 
 #content ol {
 	list-style: decimal;
@@ -156,11 +157,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #content ul {
 	list-style: disc;	
 }
-#content dd {
-	margin-bottom: 5px;
-}
-
-
 
 .embed-youtube {
 	width: 80%;
@@ -296,7 +292,7 @@ a:hover {
 }
 
 p {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	margin-top: 5px;
 }
 
