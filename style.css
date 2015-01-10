@@ -463,6 +463,17 @@ article.post > footer {
 	font-size: 0.8em;
 }
 
+.home article.post:after {
+	content: '\2026';
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 2em;
+	text-align: center;
+	letter-spacing: 10px;
+	font-weight: bold;
+}
+
 
 .entry-title {
 	font-size: 1.6em;
