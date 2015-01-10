@@ -527,6 +527,7 @@ input[type="password"] {
 	outline: none;
 }
 textarea {
+	box-sizing: border-box;
 	width: 100%;
 }
 
