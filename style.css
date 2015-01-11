@@ -145,6 +145,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	box-sizing: border-box;
 }
 
+#content > header {
+	margin-bottom: 50px;
+}
+
 #content ol, 
 #content ul, 
 #content dd {
@@ -450,6 +454,42 @@ img.aligncenter {
 }
 
 
+input, 
+textarea {
+	padding: 5px 2px;
+	margin: 0 0 5px 0;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.05em;
+	box-shadow: none;
+	
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="color"] {
+	background-color: #f7931d;
+	cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="color"]:hover {
+	background-color: #d97908;	
+}
+
+input[type="button"],
+input[type="submit"] {
+	padding: 6px 15px;
+}
+
+
 
 /* ARTICLES */
 article.page,
@@ -495,6 +535,7 @@ article.post > footer {
 
 .entry-links {
 	margin-top: 25px;
+	font-size: 1.2em;
 }
 
 .entry-content .attachment-post-thumbnail {
@@ -524,44 +565,10 @@ article.post > footer {
 	padding: 10px;
 }
 
-input {
-	font-family: 'Exo 2', sans-serif;
-	font-size: 1.1em;
-
-}
-
-input[type="text"],
-input[type="password"] {
-	margin: 0;
-	padding: 0;
-	box-shadow: none;
-	outline: none;
-}
-textarea {
-	box-sizing: border-box;
-	width: 100%;
-}
-
-input[type="button"],
-input[type="submit"],
-input[type="color"] {
-	background-color: #f7931d;
-	border: 1px solid #4c4c4e;
-	cursor: pointer;
-	padding: 3px 15px;
-}
-
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="color"]:hover {
-	background-color: #d97908;	
-}
-
 
 #searchform {
 	width: 100%;
 }
-
 #searchform label {
 	display:block;
 }
@@ -569,15 +576,16 @@ input[type="color"]:hover {
 	width: 100%;
 	box-sizing: border-box;
 	float: left;
-	padding: 5px 70px 5px 5px;
+	padding-right: 70px;
 }
 #searchform input[type="submit"] {
 	width: 70px;
 	height: 100%;
 	box-sizing: border-box;
-	float: right;
-	margin: 1px 1px 1px -100%;
+	margin-left: -100%;
 	padding: 6px;
+	float: right;
+	text-align: left;
 	background: 0;
 	border: 0;
 }
