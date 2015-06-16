@@ -44,14 +44,32 @@ return $title . esc_attr( get_bloginfo( 'name' ) );
 add_action( 'widgets_init', 'nexnet_widgets_init' );
 function nexnet_widgets_init()
 {
-register_sidebar( array (
-'name' => __( 'Sidebar Widget Area', 'nexnet' ),
-'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => "</li>",
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
+	register_sidebar( array (
+		'name' => __( 'Bottom Left Widget Area', 'nexnet' ),
+		'id' => 'bottom-left-widget-area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => "</li>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array (
+		'name' => __( 'Bottom Center Widget Area', 'nexnet' ),
+		'id' => 'bottom-center-widget-area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => "</li>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array (
+		'name' => __( 'Bottom Right Widget Area', 'nexnet' ),
+		'id' => 'bottom-right-widget-area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => "</li>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 function nexnet_custom_pings( $comment )
 {
