@@ -1,4 +1,16 @@
-<aside id="sidebar" role="complementary">
+
+<?php
+	if(is_active_sidebar( 'bottom-left-widget-area' ) ||
+		is_active_sidebar( 'bottom-center-widget-area' ) ||
+		is_active_sidebar( 'bottom-right-widget-area' ) ) {
+
+		echo '<aside id="sidebar" role="complementary" class="sidebar-border">';
+	}
+	else {
+		echo '<aside id="sidebar" role="complementary">';
+	}
+?>
+
 	<?php if ( is_active_sidebar( 'bottom-left-widget-area' ) ) : ?>
 		<div id="bottom-left-widgets" class="widget-area">
 		<ul class="xoxo">

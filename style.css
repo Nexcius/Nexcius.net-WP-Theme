@@ -148,13 +148,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	display: flex;
 	flex-direction: column;
 	flex-flow: row;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.sidebar-border {
 	border-top: 10px solid #444;
 }
 
 .widget-area {
 	width: 25%;
-	padding-bottom: 20px;
+	padding-bottom: 20px;  
 }
 
 #bottom-center-widgets {
@@ -768,12 +771,15 @@ article.post > footer {
 		font-weight: bold;
 	}
 
-	#menu > .menu {
+	#menu > .menu,
+	#menu > .menu-mainmenu-container {
 		display: none;
 	}
 
 	#menu:hover > .menu,
-	#menu:focus > .menu {
+	#menu:focus > .menu,
+	#menu:hover > .menu-mainmenu-container,
+	#menu:focus > .menu-mainmenu-container {
 		display: block;
 	}
 }
