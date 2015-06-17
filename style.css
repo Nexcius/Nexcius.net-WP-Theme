@@ -199,6 +199,7 @@ img#wpstats{display:none}
 /**************************
 *	CONTENT
 **************************/
+
 #content {
 	width: 100%;
 	padding-bottom: 20px;
@@ -342,6 +343,7 @@ text-shadow: none;
 
 /* GLOBAL TAGS */
 body {
+	min-width: 400px;
 	font-family: 'Exo 2', sans-serif;
 	background-color: #222;
 	color: #4c4c4e;
@@ -708,12 +710,14 @@ article.post > footer {
 /**************************
 * RESPONSIVE LAYOUT
 **************************/
+html #wpadminbar {
+	min-width: 400px !important;
+}
+
 @media screen and (max-width: 1200px) {
     #footer {
     	margin-top: 0;
     }
-
-
 }
 
 @media screen and (max-width: 782px) {
@@ -729,8 +733,9 @@ article.post > footer {
 	.attachment-post-thumbnail {
 		width: 100%;
 		width: calc(100% + 40px);
+		max-width: calc(100% + 40px);
 		margin-left: -20px;
-	}
+ 	}
 
 	blockquote.alignleft, 
 	.wp-caption.alignleft, 
@@ -743,9 +748,6 @@ article.post > footer {
 	img.alignright {
 		margin: 5px -20px 10px 5px;
 	}
-
-
-	/* HERE */
 
 	#menu {
 		width: 90%;
@@ -802,6 +804,7 @@ article.post > footer {
 	#menu:focus > .menu-mainmenu-container {
 		display: block;
 	}
+
 }
 
 
@@ -816,6 +819,7 @@ article.post > footer {
 	.attachment-post-thumbnail{
 		width: 100%;
 		width: calc(100% + 20px);
+		max-width: calc(100% + 20px);
 		margin-left: -10px;
 	}
 
@@ -838,7 +842,4 @@ article.post > footer {
 	.widget-area {
 		width: 100%;
 	}
-
-
-
 }
