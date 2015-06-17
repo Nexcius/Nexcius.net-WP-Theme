@@ -783,7 +783,6 @@ article.post > footer {
 	#menu a {
 		color: #313233 !important;
 	}
-	
 
 	#menu:before {
 		content: 'Menu';
@@ -796,6 +795,7 @@ article.post > footer {
 	#menu > .menu,
 	#menu > .menu-mainmenu-container {
 		display: none;
+		padding-top: 10px;
 	}
 
 	#menu:hover > .menu,
