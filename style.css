@@ -232,6 +232,7 @@ img#wpstats{display:none}
 }
 
 
+
 /**************************
 *	COMMENTS
 **************************/
@@ -837,6 +838,7 @@ article.post > footer {
 
 	.widget-area {
 		width: 100%;
+		order: -1;
 	}
 
 

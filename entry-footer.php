@@ -1,7 +1,15 @@
 <footer class="entry-footer">
-<span class="cat-links"><?php _e( 'Categories: ', 'nexnet' ); ?><?php the_category( ', ' ); ?></span>
-<span class="tag-links"><?php the_tags(); ?></span>
-<?php if ( comments_open() ) { 
-echo '<span class="meta-sep">|</span> <span class="comments-link"><a href="' . get_comments_link() . '">' . sprintf( __( 'Comments', 'nexnet' ) ) . '</a></span>';
-} ?>
+<?php 
+if(has_category())  {
+	echo '<span class="cat-links">' . _e( 'Categories: ', 'nexnet' ) . the_category( ', ' ) . '</span><br />';
+}
+
+if(has_tag()) {
+	echo '<span class="tag-links">' . the_tags() . '</span><br />';
+}
+/*
+if ( comments_open() ) { 
+	echo '<span class="comments-link"><a href="' . get_comments_link() . '">' . sprintf( get_comments_number() . ' ' . __( 'Comments', 'nexnet' ) ) . '</a></span>';
+} */
+?>
 </footer> 
