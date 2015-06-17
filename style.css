@@ -274,17 +274,20 @@ img#wpstats{display:none}
 	display: table-row;
 }
 
+
 .comment-form-author > label,
 .comment-form-email > label,
 .comment-form-url > label {
 	display: table-cell;
-	padding-right: 25px;
+	padding-right: 20px;
 }
 
 .comment-form-author > input,
 .comment-form-email > input,
 .comment-form-url > input {
 	display: table-cell;
+	width: 100%;
+	max-width: 300px;
 }
 
 .comment-form-comment {
@@ -747,6 +750,7 @@ article.post > footer {
 
 	#menu {
 		width: 90%;
+		border: 0;
 	}
 
 	#container {
