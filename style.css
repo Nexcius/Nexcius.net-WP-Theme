@@ -835,7 +835,9 @@ article.post > footer {
 		flex-direction: column;
 	}
 
-	.widget-area {
+	.widget-area,
+	#bottom-center-widgets {
 		width: 100%;
 	}
+
 }
