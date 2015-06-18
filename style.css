@@ -344,6 +344,23 @@ text-shadow: none;
 	font-size: 0.8em;
 }
 
+.entry-content .gallery,
+.entry-content .tiled-gallery {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.entry-content .slideshow-window {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.entry-content .slideshow-slide {
+	max-width: 100%;
+}
+
+
 /* GLOBAL TAGS */
 body {
 	min-width: 300px;
@@ -764,7 +781,7 @@ article.post > footer {
 	}
 
 	#menu .page_item_has_children .children,
-	#menu .manu-item-has-children .children {
+	#menu .menu-item-has-children .sub-menu {
 		display: block;
 		position: relative;
 		left: 0;
