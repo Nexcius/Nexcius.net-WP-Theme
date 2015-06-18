@@ -503,6 +503,9 @@ img,
 	margin: 0;
 }
 
+p.attachment {
+	text-align: center;
+}
 
 .alignnone,
 .attachment-post-thumbnail {
