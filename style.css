@@ -857,10 +857,13 @@ article.post > footer {
 		flex-direction: column;
 	}
 
-	.widget-area,
-	#bottom-center-widgets {
+	.widget-area {
 		width: 100%;
+	}
+
+	#bottom-center-widgets {
 		order: -1;
+		width: 100%;
 	}
 
 }
