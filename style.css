@@ -233,6 +233,7 @@ img#wpstats{display:none}
 }
 
 
+
 /**************************
 *	COMMENTS
 **************************/
@@ -859,6 +860,7 @@ article.post > footer {
 	.widget-area,
 	#bottom-center-widgets {
 		width: 100%;
+		order: -1;
 	}
 
 }
